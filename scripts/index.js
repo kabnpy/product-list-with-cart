@@ -25,7 +25,7 @@ function generateProductKey(product) {
 // Fetch the products from the JSON file and update state
 async function getProducts() {
   try {
-    const response = await fetch("../data.json");
+    const response = await fetch("./data.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
