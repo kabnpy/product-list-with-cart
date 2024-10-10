@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-block-start: 3rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="with-sidebar container">
+      <main class="flow">
+        <h1>Desserts</h1>
+        <div class="product-list grid"></div>
+      </main>
+      <aside class="cart flow">
+        <h2>Your Cart (<span class="cart-counter">0</span>)</h2>        
+        <div class="cart-content"></div>
+      </aside>
+    </div>
+
+    <dialog class="flow">
+      <header>
+        <img src="./assets/images/icon-order-confirmed.svg" alt="">
+        <h2>Order Confirmed</h2>
+        <p>We hope you've enjoyed your food!</p>
+      </header>
+      <div class="cart-content">
+        <div class="cart-item-list"></div>
+        <p class="cart-order-total">Order Total<span>0.00</span></p>
+      </div>
+      <button class="start-new-order">Start New Order</button>
+    </dialog>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/kabnpy">kabnpy</a>.
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
